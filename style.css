@@ -187,6 +187,27 @@ body {
   text-shadow: 0 2px 15px rgba(169, 168, 169, 0.5);
 }
 
+/* Navigation Styles */
+.nav_list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav_item {
+  position: relative;
+}
+
+.nav_link {
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav_toggle {
+  display: none;
+}
+
 .nav_list {
   display: flex;
   list-style: none;
@@ -229,7 +250,8 @@ body {
 }
 
 .nav_toogle {
-  font-size: 2rem;
+  font-size: large;
+  font-weight: 600;
   cursor: pointer;
   color: #757373;
   display: none;
@@ -239,7 +261,11 @@ body {
   background: transparent; /* Make background transparent */
   border: none; /* Remove any border */
 }
-
+.nav_toggle:hover {
+  color: #0e2431;
+  font-size: larger;
+  cursor: pointer;
+}
 /* //tooltip style */
 
 /* .nav_link::before {
@@ -255,27 +281,40 @@ body {
   opacity: 0;
 } */
 
-.nav_link:hover::before {
-  opacity: 1;
-}
-
 /* Glassmorphism effect for nav_list */
 @media (max-width: 768px) {
   .nav_list {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav_list.show {
+    display: flex;
+  }
+
+  .nav_toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav_list {
     position: fixed;
-    top: 4rem;
+    top: 4.3rem;
     right: -100%;
     width: 60%;
-    height: 73vh;
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    height: calc(100vh - 4rem); /* Adjust height to fit within viewport */
+    background: rgba(13, 100, 231, 0.1); /* Semi-transparent white */
     backdrop-filter: blur(10px); /* Blur effect */
     -webkit-backdrop-filter: blur(10px); /* Blur effect for Safari */
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px rgba(8, 44, 250, 0.5);
     flex-direction: column;
     align-items: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
     transition: right 0.5s ease-in-out; /* Smooth slide-in effect */
+    overflow-y: auto; /* Enable scrolling if content overflows */
   }
 
   .nav_list.show {
@@ -283,11 +322,8 @@ body {
   }
 
   .nav_link {
-    color: #fff;
-  }
-
-  .nav_link::before {
-    display: none;
+    color: #000; /* Ensure text color is visible */
+    margin: 0.5rem 0; /* Add margin for spacing */
   }
 
   .nav_toogle {
@@ -336,6 +372,45 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+/* Base styles for the hero image */
+.hero-image img {
+    width: 100%;
+    height: auto;
+    max-width: 600px; /* Adjust this value as needed */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Media queries for different devices */
+
+/* iPad (portrait and landscape) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero-image img {
+        max-width: 500px; /* Adjust this value as needed */
+    }
+}
+
+/* Surface Pro (portrait and landscape) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .hero-image img {
+        max-width: 550px; /* Adjust this value as needed */
+    }
+}
+
+/* iPhone SE (portrait and landscape) */
+@media (max-width: 375px) {
+    .hero-image img {
+        max-width: 200px; /* Adjust this value as needed */
+    }
+}
+
+/* Laptops */
+@media (min-width: 1366px) and (max-width: 1920px) {
+    .hero-image img {
+        max-width: 600px; /* Adjust this value as needed */
+    }
 }
 
 /* Media query for larger screens */
@@ -1358,4 +1433,47 @@ body {
   50% {
     border-color: black;
   }
+}
+
+
+/* Tutorial Videos Section */
+.tutorial-videos-section {
+    padding: 2rem;
+}
+
+.tutorial-videos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.tutorial-video-item {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tutorial-video-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tutorial-video-item h3 {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* Responsive Grid */
+@media (min-width: 600px) {
+    .tutorial-videos-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 900px) {
+    .tutorial-videos-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
