@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const navToggle = document.querySelector('.nav_toogle');
+    const navToggle = document.querySelector('.nav_toggle');
     const navList = document.querySelector('.nav_list');
     const navLinks = document.querySelectorAll('.nav_link');
 
@@ -204,5 +204,42 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+    });
+
+    // Function to reset the contact form after submission
+    const contactForm = document.getElementById('contact-form');
+    contactForm.addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Submit the form data using Fetch API
+        fetch(contactForm.action, {
+            method: contactForm.method,
+            body: new FormData(contactForm),
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                alert('Thank you for your message!');
+                contactForm.reset(); // Reset the form fields
+            } else {
+                alert('Oops! There was a problem submitting your form.');
+            }
+        }).catch(error => {
+            alert('Oops! There was a problem submitting your form.');
+        });
+    });
+
+    const videoItems = document.querySelectorAll('.tutorial-video-item video');
+
+    videoItems.forEach(video => {
+        video.addEventListener('mouseover', function () {
+            video.play();
+        });
+
+        video.addEventListener('mouseout', function () {
+            video.pause();
+            video.currentTime = 0; // Reset video to the beginning
+        });
     });
 });
