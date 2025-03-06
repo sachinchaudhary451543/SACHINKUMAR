@@ -4,18 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="UdkO9mxWua4YnNkb3kvP5o1PmWwLlu9vDLtJwMOoOv8" />
-    <title>My Portfolio Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <title>Sachin Chaudhary | Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" media="all">
 </head>
 
 <body>
     <button id="theme-toggle" class="theme-btn">🌙</button>
-    <!-- Welcome Animation Overlay -->
-    <!-- <div class="welcome-overlay">
-        <div class="welcome-text">Welcome to My Portfolio!</div>
-    </div> -->
     <header class="header">
         <nav class="nav">
             <a href="#" class="nav_logo">SP Tech. World</a>
@@ -23,11 +19,12 @@
                 <li><a href="#home" class="nav_link active" data-tooltip="Home"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="#about" class="nav_link" data-tooltip="About"><i class="fas fa-user"></i> About</a></li>
                 <li><a href="#skills" class="nav_link" data-tooltip="Skills"><i class="fas fa-code"></i> Skills</a></li>
-                <li><a href="#work" class="nav_link" data-tooltip="Work"><i class="fas fa-briefcase"></i> Work</a></li>
+                <li><a href="#work" class="nav_link" data-tooltip="Projects"><i class="fas fa-briefcase"></i> Projects</a></li>
+                <li><a href="#tutorial-videos" class="nav_link" data-tooltip="Tutorial Videos"><i class="fas fa-video"></i> Tutorials</a></li>
                 <li><a href="#contact" class="nav_link" data-tooltip="Contact"><i class="fas fa-envelope"></i> Contact</a></li>
                 <li><a href="Sachin Kumar resume.pdf" download class="nav_link" data-tooltip="Resume"><i class="fas fa-file-download"></i> Resume</a></li>
             </ul>
-            <div class="nav_toogle">
+            <div class="nav_toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
@@ -46,13 +43,13 @@
                     <a href="mailto:sachinkumar865042@gmail.com?subject=Inquiry&body=Hi🙂, I would like to connect with you."
                     style="text-decoration: none; font-weight: bold;"><i class="fa-regular fa-envelope"></i></a>
                     <a href="https://www.instagram.com/spchaudhary4515?igsh=MWtsc2VhM2h0MXBrYg=="><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/sachin-kumar-679646218?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/sachin-kumar-679646218"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/sachinchaudhary451543"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
         <div class="hero-image">
-            <img src="dummy image for profile.webp" alt="profile image">
+            <img src="dummy image for profile.webp" alt="profile image" loading="lazy">
         </div>
     </section>
 
@@ -189,109 +186,159 @@
     <!-- END OF THIS SECTION -->
 
     <section class="work-section" id="work">
-        <h2 class="about-title">PROJECTS</h2>
-        <div class="projects-img">
-            <img src="banner project.webp" alt="skills image">
-        </div>
-        <div class="work-grid">
-            <div class="work-item animated fadeInUp">
-                <a href="myntra.png" data-lightbox="projects" data-title="Myntra Web Page Clone">
-                    <img src="myntra.png" alt="work image">
-                </a>
-               <div class="work-text">
-                <h3>1. Myntra Web Page Clone</h3>
+    <h2 class="about-title">PROJECTS</h2>
+    <div class="projects-img">
+        <img src="banner project.webp" alt="skills image">
+    </div>
+    <div class="work-grid">
+        <div class="work-item animated fadeInUp">
+            <a href="myntra.png" data-lightbox="projects" data-title="E-commerce Template">
+                <img src="myntra.png" alt="work image" loading="lazy">
+            </a>
+            <div class="work-text">
+                <h3>1. E-commerce</h3>
                 <p>
-                    Designed a responsive clone of the Myntra website using HTML, CSS, and JavaScript. Focused on replicating the layout, navigation, and product display features.
+                    Designed a responsive e-commerce template using HTML, CSS, and JavaScript. Focused on replicating the layout, navigation, and product display features.
                     <br>
                     <strong>Skills Used:</strong> HTML, CSS, JavaScript
                     <br>
                     <strong>Highlights:</strong> Integrated a mock product catalog and search functionality.
                 </p>
-               </div>
-            </div>
-            <div class="work-item animated fadeInUp">
-                <a href="ignou img (2).png" data-lightbox="projects" data-title="IGNOU Login Page Clone">
-                    <img src="ignou img (2).png" alt="work image">
-                </a>
-                <div class="work-text">
-                    <h3>2. IGNOU Login Page Clone</h3>
-                    <p>
-                        Created a clone of the login page of IGNOU students using HTML, CSS, and JavaScript.
-                        <br><strong>Skills Used:</strong> HTML, CSS, JavaScript
-                        <br><strong>Highlights:</strong> Implemented form validation and error handling for user input.
-                    </p>
-                </div>
-            </div>
-            <div class="work-item animated fadeInUp">
-                <a href="insta. ss img.png" data-lightbox="projects" data-title="Instagram Login Page Clone">
-                    <img src="insta. ss img.png" alt="work image">
-                </a>
-                <div class="work-text">
-                    <h3>3. Instagram Login Page Clone</h3>
-                    <p>
-                        Developed a clone of Instagram's login page using HTML and CSS.
-                        <br>
-                        <strong>Skills Used:</strong> HTML, CSS
-                        <br>
-                        <strong>Highlights:</strong> Emphasized pixel-perfect design and responsive layout.
-                    </p>
-                </div>
-            </div>
-            <div class="work-item animated fadeInUp">
-                <a href="todo app.png" data-lightbox="projects" data-title="To-Do App">
-                    <img src="todo app.png" alt="work image">                
-                </a>
-                <div class="work-text">
-                    <h3>4. To-Do App</h3>
-                    <p>
-                        Built a dynamic to-do application with features like adding, deleting, and marking tasks as completed.
-                        <br><strong>Skills Used:</strong>  HTML, CSS, JavaScript
-                        <br><strong>Highlights:</strong> Focused on simplicity, intuitive design, and real-time task updates.
-                    </p>
-                </div>
-            </div>
-            <div class="work-item animated fadeInUp">
-                <a href="cal. img.png" data-lightbox="projects" data-title="Calculator App">
-                    <img src="cal. img.png" alt="work image">                
-                </a>  
-                <div class="work-text">
-                    <h3>5. Calculator App</h3>
-                    <p>
-                        Developed a simple yet functional calculator app using JavaScript.
-                        <br><strong>Skills Used:</strong> HTML, CSS, JavaScript
-                        <br><strong>Highlights:</strong> Supported basic arithmetic operations with a clean and user-friendly interface.
-                    </p>
-                </div>
-            </div>
-            <div class="work-item animated fadeInUp">
-                <a href="ignou admit card img.png" data-lightbox="projects" data-title="IGNOU Admit Card Generate Page Clone">
-                    <img src="ignou admit card img.png" alt="work image">                
-                </a>
-                <div class="work-text">
-                    <h3>6. IGNOU Admit Card Generate Page Clone</h3>
-                    <p>
-                        Created a Clone of login page of IGNOU students using HTML, CSS, and JavaScript.
-                        <br><strong>Skills Used:</strong> HTML, CSS, JavaScript
-                        <br><strong>Highlights:</strong> Implemented form validation and error handling for user input.
-                    </p>
-                </div>
-            </div>
-            <div class="work-item animated fadeInUp">
-                <a href="PROP IMG1.jpg" data-lightbox="projects" data-title="Real Estate Management Project">
-                    <img src="PROP IMG1.jpg" alt="work image">                
-                </a>
-                <div class="work-text">
-                    <h3>7. Real Estate Management Project</h3>
-                    <p>
-                        Managed and showcased real estate project data for clients. Integrated lead tracking and inventory management.
-                        <br><strong>Skills Used:</strong> Excel, WordPad, Backend Operations
-                        <br><strong>Highlights:</strong> Coordinated with sales teams and ensured smooth client communication.
-                    </p>
-
-                </div>
             </div>
         </div>
-    </section>
+        <div class="work-item animated fadeInUp">
+            <a href="ignou img (2).png" data-lightbox="projects" data-title="IGNOU Login Page Clone">
+                <img src="ignou img (2).png" alt="work image" loading="lazy">
+            </a>
+            <div class="work-text">
+                <h3>2. Login Page Demo</h3>
+                <p>
+                    Created a clone of the login page of IGNOU students using HTML, CSS, and JavaScript.
+                    <br><strong>Skills Used:</strong> HTML, CSS, JavaScript
+                    <br><strong>Highlights:</strong> Implemented form validation and error handling for user input.
+                </p>
+            </div>
+        </div>
+        <div class="work-item animated fadeInUp">
+            <a href="insta. ss img.png" data-lightbox="projects" data-title="Instagram Login Page Clone">
+                <img src="insta. ss img.png" alt="work image" loading="lazy">
+            </a>
+            <div class="work-text">
+                <h3>3. Instagram Login Page Demo</h3>
+                <p>
+                    Developed a clone of Instagram's login page using HTML and CSS.
+                    <br>
+                    <strong>Skills Used:</strong> HTML, CSS
+                    <br>
+                    <strong>Highlights:</strong> Emphasized pixel-perfect design and responsive layout.
+                </p>
+            </div>
+        </div>
+        <div class="work-item animated fadeInUp">
+            <a href="todo app.png" data-lightbox="projects" data-title="To-Do App">
+                <img src="todo app.png" alt="work image" loading="lazy">                
+            </a>
+            <div class="work-text">
+                <h3>4. To-Do App</h3>
+                <p>
+                    Built a dynamic to-do application with features like adding, deleting, and marking tasks as completed.
+                    <br><strong>Skills Used:</strong>  HTML, CSS, JavaScript
+                    <br><strong>Highlights:</strong> Focused on simplicity, intuitive design, and real-time task updates.
+                </p>
+            </div>
+        </div>
+        <div class="work-item animated fadeInUp">
+            <a href="cal. img.png" data-lightbox="projects" data-title="Calculator App">
+                <img src="cal. img.png" alt="work image" loading="lazy">                
+            </a>  
+            <div class="work-text">
+                <h3>5. Calculator App</h3>
+                <p>
+                    Developed a simple yet functional calculator app using JavaScript.
+                    <br><strong>Skills Used:</strong> HTML, CSS, JavaScript
+                    <br><strong>Highlights:</strong> Supported basic arithmetic operations with a clean and user-friendly interface.
+                </p>
+            </div>
+        </div>
+        <div class="work-item animated fadeInUp">
+            <a href="ignou admit card img.png" data-lightbox="projects" data-title="IGNOU Admit Card Generate Page Clone">
+                <img src="ignou admit card img.png" alt="work image" loading="lazy">                
+            </a>
+            <div class="work-text">
+                <h3>6. Admit Card Generator</h3>
+                <p>
+                    Created a Clone of login page of IGNOU students using HTML, CSS, and JavaScript.
+                    <br><strong>Skills Used:</strong> HTML, CSS, JavaScript
+                    <br><strong>Highlights:</strong> Implemented form validation and error handling for user input.
+                </p>
+            </div>
+        </div>
+        <div class="work-item animated fadeInUp">
+            <a href="PROP IMG1.jpg" data-lightbox="projects" data-title="Real Estate Management Project">
+                <img src="PROP IMG1.jpg" alt="work image" loading="lazy">                
+            </a>
+            <div class="work-text">
+                <h3>7. Real Estate Management Project</h3>
+                <p>
+                    Managed and showcased real estate project data for clients. Integrated lead tracking and inventory management.
+                    <br><strong>Skills Used:</strong> Excel, WordPad, Backend Operations
+                    <br><strong>Highlights:</strong> Coordinated with sales teams and ensured smooth client communication.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- New Tutorial Videos Section -->
+<section class="tutorial-videos-section" id="tutorial-videos">
+    <h2 class="about-title">Projects Tutorial</h2>
+    <div class="tutorial-videos-grid">
+        <div class="tutorial-video-item">
+            <video width="100%" controls loading="lazy">
+                <source src="myntra.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>E-COMMERCE</h3>
+        </div>
+        <div class="tutorial-video-item">
+            <video width="100%" controls loading="lazy">
+                <source src="grade card.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>GRADE CARD</h3>
+        </div>
+        <div class="tutorial-video-item">
+            <video width="100%" controls loading="lazy">
+                <source src="calculator.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>CALCULATOR</h3>
+        </div>
+        <div class="tutorial-video-item">
+            <video width="100%" controls loading="lazy">
+                <source src="instagram.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>INSTA..</h3>
+        </div>
+        <div class="tutorial-video-item">
+            <video width="100%" controls loading="lazy">
+                <source src="admit card.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>ADMIT CARD GENERATOR</h3>
+        </div>
+        <div class="tutorial-video-item">
+            <video width="100%" controls loading="lazy">
+                <source src="todo app.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>TO-DO APP</h3>
+        </div>
+        <!-- Add more tutorial videos as needed -->
+    </div>
+</section>
+
     <!-- end................. -->
 
 
@@ -299,7 +346,7 @@
         <h1 class="about-title">ABOUT ME</h1>
         <div class="about-content">
             <div class="about-img">
-                <img src="dummy image for profile.webp" alt="about image">
+                <img src="dummy image for profile.webp" alt="about image" loading="lazy">
             </div>
             <div class="about-text animated fadeInUp">
                 <h2>Hi, I'm Sachin Kumar</h2>
@@ -341,7 +388,7 @@
             <a href="mailto:sachinkumar865042@gmail.com?subject=Inquiry&body=Hi🙂, I would like to connect with you."
             style="text-decoration: none; font-weight: bold;"><i class="fa-regular fa-envelope"></i></a>
             <a href="https://www.instagram.com/spchaudhary4515?igsh=MWtsc2VhM2h0MXBrYg=="><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/sachin-kumar-679646218?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/sachin-kumar-679646218"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/sachinchaudhary451543"><i class="fab fa-github"></i></a>
             <a href="https://wa.me/918433172794?text=Hello,%20I%20would%20like%20to%20know%20more."><i class="fab fa-whatsapp"></i></a>
         </div>
